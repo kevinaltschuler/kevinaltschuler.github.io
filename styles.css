@@ -20,6 +20,7 @@ input.form-control{margin-bottom:5px}p.navbar-text.pull-right{margin-right:15px}
 	box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
 	padding: 30px;
 	border-radius: 2px;
+	max-width: 400px;
 }
 
 .pro-pic {
