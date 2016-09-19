@@ -21,6 +21,7 @@ input.form-control{margin-bottom:5px}p.navbar-text.pull-right{margin-right:15px}
 	padding: 30px;
 	border-radius: 2px;
 	max-width: 400px;
+	min-width: 300px;
 }
 
 .pro-pic {
