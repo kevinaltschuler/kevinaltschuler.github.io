@@ -67,6 +67,12 @@ input.form-control{margin-bottom:5px}p.navbar-text.pull-right{margin-right:15px}
 	margin-right: 10px;
 }
 
+.home-links {
+	display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
 .home-link:hover {
 	cursor: pointer;
 	background-color: #eee;
