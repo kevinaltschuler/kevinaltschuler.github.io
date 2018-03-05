@@ -85,7 +85,7 @@ input.form-control{margin-bottom:5px}p.navbar-text.pull-right{margin-right:15px}
 }
 
 .dark-overlay {
-	background-color: rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,.9);
 	position: absolute;
 	top: 0;
 	left: 0;
