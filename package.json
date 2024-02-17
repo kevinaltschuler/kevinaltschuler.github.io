@@ -9,8 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pdfjs-dist": "^4.0.379",
-    "simplex-noise": "^4.0.1",
-    "three": "^0.161.0"
+    "pdfjs-dist": "^4.0.379"
   }
 }
