@@ -1,5 +1,5 @@
-import * as pdfjsDist from "./node_modules/pdfjs-dist/build/pdf.min.mjs";
-import * as pdfjsWorker from "./node_modules/pdfjs-dist/build/pdf.worker.mjs";
+import * as pdfjsDist from "./pdf.mjs";
+import * as pdfjsWorker from "./pdf.worker.mjs";
 
 // If absolute URL from the remote server is provided, configure the CORS
 // header on that server.
