@@ -27,9 +27,9 @@ loadingTask.promise.then(
       var canvas = document.getElementById("the-canvas");
       var context = canvas.getContext("2d");
       canvas.width = viewport.width;
-      canvas.style.width = "100%";
+      canvas.style.width = "45%";
       canvas.height = viewport.height;
-      canvas.style.height = "100%";
+      canvas.style.height = "auto";
 
       // Render PDF page into canvas context
       var renderContext = {
