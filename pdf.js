@@ -3,7 +3,7 @@ import * as pdfjsWorker from "./pdf.worker.mjs";
 
 // If absolute URL from the remote server is provided, configure the CORS
 // header on that server.
-var url = "./img/resume10.pdf";
+var url = "./img/resume12.idml.pdf";
 
 // Loaded via <script> tag, create shortcut to access PDF.js exports.
 // The workerSrc property shall be specified.
