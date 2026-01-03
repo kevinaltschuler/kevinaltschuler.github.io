@@ -1,17 +1,219 @@
+/* Font Declarations */
+@font-face {
+  font-family: 'Baskervville';
+  src: url('./font/Baskervville/Baskervville-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Baskervville';
+  src: url('./font/Baskervville/Baskervville-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./font/Lato/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./font/Lato/Lato-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./font/Lato/Lato-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./font/Lato/Lato-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./font/Lato/Lato-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./font/Lato/Lato-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./font/Lato/Lato-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./font/Lato/Lato-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: rgb(253,252,251);
-  height: 100vh;
-  width: 100vw;
+  background-color: #FBF9F8;
+  /* background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><rect x="0" y="0" width="1" height="1" fill="%23e5e5e5"/></svg>'); */
+  background-size: 8px 8px;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Headers use Baskervville */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Baskervville', serif;
+  color: #444;
+}
+
+/* Tab Bar Navigation */
+.tab-bar {
+  background: #FBF9F8;
+  padding: 0;
   display: flex;
+  justify-content: space-between;
+  gap: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #777;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-links-left,
+.tab-links-right {
+  display: flex;
+  gap: 0;
+}
+
+.tab-link {
+  padding: 16px 32px;
+  text-decoration: underline;
+  color: #444;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.tab-link:hover {
+  text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;
+}
+
+.tab-link.active {
+  text-shadow: 0.6px 0 0 currentColor, -0.6px 0 0 currentColor;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.home-link {
+  text-decoration: underline;
+  color: #444;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.home-link:hover {
+  text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;
+}
+
+.home-link.active {
+  text-shadow: 0.6px 0 0 currentColor, -0.6px 0 0 currentColor;
+}
+
+/* Page Content */
+.page-content {
+  padding: 40px 20px;
+  display: flex;
+  box-sizing: border-box;
   justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+p {
+  margin: 0;
+  color: #444;
+}
+
+.content-card {
+  width: 100%;
+  background: #FBF9F8;
+  padding: 20px;
+  border-radius: 2px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  border: 1px #777 solid;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
 }
 
 #the-canvas {
   border: 1px #777 solid;
   border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
 }
 
+/* Home Page */
+.home-container {
+  text-align: left;
+  width: 100%;
+}
+
+.content-card h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0;
+  color: #444;
+}
+
+
+/* Ensure proper spacing on mobile devices */
+@media (max-width: 768px) {
+  .tab-link {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .home-container h1 {
+    font-size: 36px;
+  }
+
+  .page-content {
+    padding: 20px 10px;
+  }
+}
 
 #background {
   position: fixed;
